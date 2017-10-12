@@ -23,19 +23,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bct-xR-hoa" userLabel="People Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="583"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pete" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-EE-omZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="583"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" image="Pete" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-EE-omZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="583"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.031372549020000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Ben" translatesAutoresizingMaskIntoConstraints="NO" id="CrZ-nm-Axr">
-                                                <rect key="frame" x="5" y="0.0" width="74" height="583"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="747" image="Ben" translatesAutoresizingMaskIntoConstraints="NO" id="CrZ-nm-Axr">
+                                                <rect key="frame" x="79" y="0.0" width="0.0" height="583"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.031372549020000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Becky" translatesAutoresizingMaskIntoConstraints="NO" id="8vt-Qd-fCp">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Becky" translatesAutoresizingMaskIntoConstraints="NO" id="8vt-Qd-fCp">
                                                 <rect key="frame" x="84" y="0.0" width="151" height="583"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.031372549020000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Ray" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-pF-JWS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Ray" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-pF-JWS">
                                                 <rect key="frame" x="240" y="0.0" width="135" height="583"/>
                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.031372549020000001" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
@@ -44,14 +44,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-xL-Hyh">
                                         <rect key="frame" x="0.0" y="583" width="375" height="28"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Distribution: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ow-6Z-7kA">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="28"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distribution: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ow-6Z-7kA">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="xYS-qr-9vS"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ypp-lI-U45">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ypp-lI-U45">
+                                                <rect key="frame" x="80" y="0.0" width="295" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="Spk-sm-FS7"/>
                                                 </constraints>
@@ -72,13 +75,16 @@
                                         <rect key="frame" x="0.0" y="611" width="375" height="28"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alignment: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At0-Kc-WVi">
-                                                <rect key="frame" x="0.0" y="0.0" width="68.5" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="DPe-j9-jEc"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kru-7f-PR6">
-                                                <rect key="frame" x="68.5" y="0.0" width="306.5" height="29"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kru-7f-PR6">
+                                                <rect key="frame" x="80" y="0.0" width="295" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="Dgm-Bi-MO2"/>
                                                 </constraints>
